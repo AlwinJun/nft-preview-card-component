@@ -11,7 +11,7 @@
   --ff-main: "Outfit", sans-serif;
 
   --clr-font-main: hsl(215, 51%, 70%);
-  --clr-font-accent: hsl(178, 100%, 50%);
+  --clr-accent: hsl(178, 100%, 50%);
   --clr-bg: hsl(217, 54%, 11%);
   --clr-card: hsl(216, 50%, 16%);
   --clr-hr: hsl(215, 32%, 27%);
@@ -41,6 +41,11 @@ body {
   color: var(--clr-white);
   margin-bottom: inherit;
 }
+.body-text-main h1:hover,
+.body-text-main h1:focus {
+  color: var(--clr-accent);
+  cursor: pointer;
+}
 
 .body-text-main p {
   line-height: 1.4;
@@ -60,10 +65,43 @@ body {
   margin: 5em auto;
 }
 
+.content-img {
+  position: relative;
+}
+
 .content-img img {
   display: block;
   max-width: 100%;
   margin-bottom: var(--mgn-btm);
+}
+
+/* Active state for mouse hover and keyboard tab */
+
+.content-img:hover::before,
+.content-img:hover::after,
+.content-img:focus::before,
+.content-img:focus::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.content-img:hover:before,
+.content-img:focus:before {
+  background-color: var(--clr-accent);
+
+  opacity: 0.3;
+}
+.content-img:hover::after,
+.content-img:focus::after {
+  content: "";
+  background-image: url("../images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .body-text-info,
@@ -86,7 +124,7 @@ body {
 }
 
 .info-price {
-  color: var(--clr-font-accent);
+  color: var(--clr-accent);
   font-weight: 400;
 }
 
@@ -115,4 +153,9 @@ hr {
 
 .content-body-creator span {
   color: var(--clr-white);
+}
+.content-body-creator span:hover,
+.content-body-creator span:focus {
+  color: var(--clr-accent);
+  cursor: pointer;
 }
