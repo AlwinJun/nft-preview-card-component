@@ -154,8 +154,31 @@ hr {
 .content-body-creator span {
   color: var(--clr-white);
 }
+
 .content-body-creator span:hover,
 .content-body-creator span:focus {
   color: var(--clr-accent);
+  cursor: pointer;
+}
+
+/* =====FOOTER===== */
+
+.attribution {
+  font-size: 1rem;
+  color: var(--clr-white);
+  margin: 4em auto;
+  width: 90%;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--clr-font-main);
+  text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  color: var(--clr-accent);
+  text-decoration: underline;
   cursor: pointer;
 }
