@@ -7,6 +7,9 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
+    <!-- css path -->
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>Frontend Mentor | NFT preview card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -34,18 +37,23 @@
             </div>
             <div class="body-text-info">
               <div class="info-price">
-                <img src="images/icon-ethereum.svg" alt="icon-ethereum" />
-                <span> 0.041 ETH</span>
+                <div class="info-flex">
+                  <img src="images/icon-ethereum.svg" alt="icon-ethereum" />
+                  <span> 0.041 ETH</span>
+                </div>
               </div>
               <div class="info-date">
-                <img src="images/icon-clock.svg" alt="clock" />
-                <span>3 days left</span>
+                <div class="info-flex">
+                  <img src="images/icon-clock.svg" alt="clock" />
+                  <span>3 days left</span>
+                </div>
               </div>
             </div>
           </div>
+          <hr />
           <div class="content-body-creator">
             <img src="images/image-avatar.png" alt="boy picture" />
-            <span>Creation of Jules Wyvern</span>
+            <div>Creation of <span>Jules Wyvern</span></div>
           </div>
         </div>
       </div>
