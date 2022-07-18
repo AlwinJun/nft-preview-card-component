@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fs-body: 1.125rem;
+  --ff-main: "Outfit", sans-serif;
+
+  --clr-font-main: hsl(215, 51%, 70%);
+  --clr-font-accent: hsl(178, 100%, 50%);
+  --clr-bg: hsl(217, 54%, 11%);
+  --clr-card: hsl(216, 50%, 16%);
+  --clr-hr: hsl(215, 32%, 27%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --br: 10px;
+}
